@@ -1,8 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import VideoBackground from "./VideoBackground";
 
 export default function Home() {
   return (
@@ -14,7 +14,10 @@ export default function Home() {
         </div>
         <Navbar />
       </header>
-      <main className="home-title">Welcome to Ceylon EcoBags</main>
+      <VideoBackground />
+      <main className="home-content">
+        <h1>Welcome to Ceylon EcoBags</h1>
+      </main>
       <Footer />
     </div>
   );

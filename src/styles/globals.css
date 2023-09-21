@@ -5,13 +5,20 @@
   padding: 2px 5px;
   background-color: #ffffff;
 }
-.home-title {
+/* Add this to your global CSS file */
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Place it above the video background */
   text-align: center;
-  font-size: 75px;
-  padding-bottom: 50px;
-  padding-top: 40px;
-  font-family: "Tahoma";
+  color: #fff; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow for visibility */
+  font-size: 36px; /* Adjust the font size as needed */
+  font-family: "Tahoma"; /* Use the font-family you prefer */
 }
+
 .logo-container {
   display: flex;
   align-items: center;
