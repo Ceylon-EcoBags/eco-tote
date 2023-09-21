@@ -1,0 +1,28 @@
+.headerCard {
+  position: relative;
+  /* width: 100%;
+  height: 500px; */
+  overflow: hidden;
+}
+
+.headerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.headerTitle {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.headerSubtitle {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

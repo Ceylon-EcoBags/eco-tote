@@ -1,0 +1,40 @@
+/* shopPageStyle.module.css */
+
+.bagGrid {
+  display: grid;
+  padding-bottom: 150px;
+  grid-template-columns: repeat(3, 1fr); /* Three columns in a row */
+  gap: 20px; /* Gap between items */
+}
+
+.bagItem {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bagItem img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bagName {
+  font-family: "Trebuchet MS";
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.moreDetailsButton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  /* transition: background-color 0.3s ease; */
+}
+
+.moreDetailsButton:hover {
+  background-color: #000000;
+}

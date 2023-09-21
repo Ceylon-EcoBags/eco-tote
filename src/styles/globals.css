@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5px;
+  background-color: #ffffff;
+}
+.home-title {
+  text-align: center;
+  font-size: 75px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  font-family: "Tahoma";
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-text {
+  font-family: "Gill Sans MT";
+  font-size: 20px;
+  color: black;
+}
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black; /* Default link color */
+  font-family: "Helvetica";
+  font-size: 16px; /* Set the font size you prefer */
+}
+.nav li {
+  margin-right: 20px;
+}
+.footer-home {
+  text-align: center;
+}
+.footer-home a .svg-inline--fa {
+  color: rgb(15, 118, 15);
+  padding-top: 30px;
+  width: 24px;
+  height: 24px;
+  gap: 15px;
+}
+
+.footer-home a {
+  margin-right: 30px;
+}
+.nav li.active-link a {
+  font-weight: bold;
+  color: rgb(91, 193, 48);
+}
