@@ -25,7 +25,7 @@ export default function Footer() {
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>
-      <p>© 2023 Eco Tote Bags Sri Lanka. All rights reserved.</p>
+      <p>© 2023 Ceylon EcoBags. All rights reserved.</p>
     </footer>
   );
 }

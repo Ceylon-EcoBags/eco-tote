@@ -24,12 +24,12 @@ const bagsData = [
   },
   {
     id: 4,
-    name: "Elephant Tote",
+    name: "Sigiriya Rock Tote",
     imageSrc: "/img/bags/sigiriya2.png",
   },
   {
     id: 5,
-    name: "Sigiriya Heritage Tote",
+    name: "Lion's Rock Tote",
     imageSrc: "/img/bags/sigiriya.png",
   },
   {

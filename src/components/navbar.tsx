@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="logo-container">
-        <Image src="/img/logo.png" alt="Logo" width={125} height={125} />
+        <Image src="/img/logo2.png" alt="Logo" width={125} height={125} />
         <span className="logo-text">Ceylon EcoBags</span>
       </div>
       <nav className="nav">
