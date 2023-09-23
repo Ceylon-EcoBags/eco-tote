@@ -15,14 +15,14 @@ export default function HeaderCard({
 }: HeaderCardProps) {
   return (
     <div className={styles.headerCard}>
-      <Image
-        src={backgroundImage}
-        // layout="fill"
-        width={1500}
-        height={350}
-        objectFit="cover"
-        alt="Header Background"
-      />
+      <div style={{ width: "100%", height: "350px" }}>
+        <Image
+          src={backgroundImage}
+          layout="fill"
+          objectFit="cover"
+          alt="Header Background"
+        />
+      </div>
       <div className={styles.headerContent}>
         <h1 className={styles.headerTitle}>{title}</h1>
         {subtitle && <p className={styles.headerSubtitle}>{subtitle}</p>}
