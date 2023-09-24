@@ -4,7 +4,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>{/* Any other head elements go here */}</Head>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />{" "}
+          {/* Any other head elements go here */}
+        </Head>
         <body>
           <Main />
           <NextScript />
