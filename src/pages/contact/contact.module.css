@@ -1,0 +1,5 @@
+.FrameBox {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
