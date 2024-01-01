@@ -33,14 +33,13 @@ const AboutPage: React.FC = () => {
         <div className={`${styles.aboutText} slide-in`}>
           <h2>Our Commitment to Sustainability</h2>
           <p>
-            At Ceylon EcoBags, we take great pride in our unwavering commitment
-            to sustainability. Our eco-friendly bags are crafted in
-            carbon-neutral factories powered by clean, renewable solar energy.
-            Beyond our dedication to safeguarding the environment, we are
-            equally passionate about transforming lives. By creating meaningful
-            employment opportunities in underprivileged communities across Sri
-            Lanka, we actively contribute to a brighter and more eco-conscious
-            future.
+            Eco Craft is an innovative initiative committed to making a positive
+            impact on both the environment and rural economies in Sri Lanka. Our
+            mission is to foster sustainable development by producing and
+            promoting eco-friendly products that contribute to the well-being of
+            communities and the planet. Through a holistic approach, Eco Craft
+            aims to create a ripple effect of positive change, starting from the
+            grassroots level.
           </p>
         </div>
       </div>
