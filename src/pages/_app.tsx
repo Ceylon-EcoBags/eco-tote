@@ -1,12 +1,15 @@
 import { AppProps } from "next/app";
 import "../styles/globals.css";
 import RootLayout from "../layout/RootLayout";
+import { LoadingProvider } from "../context/LoadingContext"; // Adjust the path as needed
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <RootLayout>
-      <Component {...pageProps} />
-    </RootLayout>
+    <LoadingProvider>
+      <RootLayout>
+        <Component {...pageProps} />
+      </RootLayout>
+    </LoadingProvider>
   );
 }
 

@@ -1,0 +1,25 @@
+/* LoadingScreen.module.css */
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+}
+
+.pulsatingLogo {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

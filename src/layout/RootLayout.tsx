@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
+import { useLoading } from "../context/LoadingContext"; // Adjust the import path as needed
+import LoadingScreen from "../components/LoadingScreen"; // Adjust the import path as needed
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { loading } = useLoading();
+
   return (
     <div className="root-layout">
       <Head>
@@ -19,7 +19,10 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </Head>
-      {children}
+      {loading && <LoadingScreen />}
+      {!loading && children}
     </div>
   );
-}
+};
+
+export default RootLayout;
