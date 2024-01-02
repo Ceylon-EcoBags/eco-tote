@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="logo-container">
         <Image src="/img/logo2.png" alt="Logo" width={125} height={125} />
-        <span className="logo-text">Ceylon EcoBags</span>
+        <span className="logo-text">EcoCraft</span>
       </div>
       <nav className="nav">
         <ul style={{ listStyleType: "none", padding: 0 }}>

@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <VideoBackground />
       <main className="home-content">
-        <h1>Welcome to Ceylon EcoBags</h1>
+        <h1>Welcome to EcoCraft</h1>
       </main>
       <Footer />
     </div>

@@ -9,32 +9,32 @@ import styles from "./shopPageStyle.module.css";
 const bagsData = [
   {
     id: 1,
-    name: "Elephant Tote",
+    name: "Elephant",
     imageSrc: "/img/bags/elephant.png",
   },
   {
     id: 2,
-    name: "Nelum Flower Tote",
+    name: "Nelum Flower",
     imageSrc: "/img/bags/nelum.png",
   },
   {
     id: 3,
-    name: "Yala Safari Tote",
+    name: "Yala Safari",
     imageSrc: "/img/bags/leopard.png",
   },
   {
     id: 4,
-    name: "Sigiriya Rock Tote",
+    name: "Sigiriya Rock",
     imageSrc: "/img/bags/sigiriya2.png",
   },
   {
     id: 5,
-    name: "Lion's Rock Tote",
+    name: "Lion's Rock",
     imageSrc: "/img/bags/sigiriya.png",
   },
   {
     id: 6,
-    name: "Dambulla Heritage Tote",
+    name: "Dambulla Heritage",
     imageSrc: "/img/bags/dambulla.png",
   },
 ];
@@ -45,7 +45,7 @@ const shopPage: React.FC = () => {
       <header className="header">
         <div className="logo-container">
           <Image src="/img/logo.png" alt="Logo" width={125} height={125} />
-          <span className="logo-text">Ceylon EcoBags</span>
+          <span className="logo-text">EcoCraft</span>
         </div>
         <Navbar />
       </header>

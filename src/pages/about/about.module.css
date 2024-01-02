@@ -1,42 +1,79 @@
-/* about.module.css */
-
 .aboutcontent {
   padding-top: 50px;
-  display: flex; /* Use flexbox to arrange image and text side by side */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.aboutImage {
+.aboutSection {
   display: flex;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap; /* Allows content to wrap if needed */
+}
+
+.aboutImage {
+  display: flex; /* Set display to flex */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex: 1;
   max-width: 500px;
-  transform: translateX(-20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  height: 350px; /* Set a fixed height */
+  padding: 15px;
+  border-radius: 15px; /* Rounded edges */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  overflow: hidden; /* Hide overflow */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.aboutImage:hover {
+  transform: scale(1.03); /* Slightly increase size on hover */
+  filter: brightness(1.1); /* Slightly increase brightness on hover */
+}
+
+.aboutImage > span {
+  display: flex; /* Set display to flex */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure it takes up full width of the container */
+  height: 100%; /* Ensure it takes up full height of the container */
+}
+
+.aboutImage img {
+  max-width: 100%; /* Ensure image doesn't exceed container's width */
+  max-height: 100%; /* Ensure image doesn't exceed container's height */
+  border-radius: 15px; /* Match container's border-radius */
 }
 
 .aboutText {
-  flex: 0.3;
-  padding-left: 30px;
+  flex: 1;
+  padding: 15px;
   max-width: 600px;
-  transform: translateX(-20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  color: #3a5f2a; /* Example color - adjust as per your theme */
 }
 
 .aboutText h2 {
-  font-size: 20px;
+  font-size: 24px; /* Slightly larger font size for headings */
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-family: "Lucida Sans";
+  color: #2e7d32; /* Example color - adjust as per your theme */
 }
 
 .aboutText p {
   text-align: center;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-.slide-in {
-  opacity: 1;
-  transform: translateX(0);
+.reverse {
+  flex-direction: row-reverse;
+}
+.dalleAcknowledgment {
+  text-align: center;
+  font-size: 12px;
+  color: #6c757d;
+  margin: 20px 0;
 }
