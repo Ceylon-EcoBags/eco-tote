@@ -11,7 +11,13 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
-  flex-wrap: wrap; /* Allows content to wrap if needed */
+  flex-wrap: wrap;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.aboutSection:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
 }
 
 .aboutImage {
@@ -22,15 +28,8 @@
   max-width: 500px;
   height: 350px; /* Set a fixed height */
   padding: 15px;
-  border-radius: 15px; /* Rounded edges */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border-radius: 15px;
   overflow: hidden; /* Hide overflow */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
-}
-
-.aboutImage:hover {
-  transform: scale(1.03); /* Slightly increase size on hover */
-  filter: brightness(1.1); /* Slightly increase brightness on hover */
 }
 
 .aboutImage > span {
@@ -44,7 +43,7 @@
 .aboutImage img {
   max-width: 100%; /* Ensure image doesn't exceed container's width */
   max-height: 100%; /* Ensure image doesn't exceed container's height */
-  border-radius: 15px; /* Match container's border-radius */
+  border-radius: 15px;
 }
 
 .aboutText {

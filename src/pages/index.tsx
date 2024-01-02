@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import LoadingScreen from "../components/LoadingScreen";
 import VideoBackground from "./VideoBackground";
+import MotionWrapper from "../components/MotionWrapper";
 
 const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);

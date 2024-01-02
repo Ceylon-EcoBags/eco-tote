@@ -10,32 +10,32 @@ const bagsData = [
   {
     id: 1,
     name: "Elephant",
-    imageSrc: "/img/bags/elephant.png",
+    imageSrc: "/img/bags/elephant.jpg",
   },
   {
     id: 2,
     name: "Nelum Flower",
-    imageSrc: "/img/bags/nelum.png",
+    imageSrc: "/img/bags/nelum.jpg",
   },
   {
     id: 3,
     name: "Yala Safari",
-    imageSrc: "/img/bags/leopard.png",
+    imageSrc: "/img/bags/leopard.jpg",
   },
   {
     id: 4,
     name: "Sigiriya Rock",
-    imageSrc: "/img/bags/sigiriya2.png",
+    imageSrc: "/img/bags/sigiriya2.jpg",
   },
   {
     id: 5,
     name: "Lion's Rock",
-    imageSrc: "/img/bags/sigiriya.png",
+    imageSrc: "/img/bags/sigiriya.jpg",
   },
   {
     id: 6,
     name: "Dambulla Heritage",
-    imageSrc: "/img/bags/dambulla.png",
+    imageSrc: "/img/bags/dambulla.jpg",
   },
 ];
 
@@ -60,6 +60,7 @@ const shopPage: React.FC = () => {
           <div className={styles.bagItem} key={bag.id}>
             <Image src={bag.imageSrc} alt={bag.name} width={250} height={250} />
             <h3 className={styles.bagName}>{bag.name}</h3>
+            <button className={styles.detailButton}>More Details</button>
           </div>
         ))}
       </div>

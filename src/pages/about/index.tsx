@@ -3,6 +3,7 @@ import HeaderCard from "../../components/HeaderCard";
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import styles from "./about.module.css";
+import MotionWrapper from "../../components/MotionWrapper";
 
 import Image from "next/image";
 import Link from "next/link";

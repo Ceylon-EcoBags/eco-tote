@@ -40,28 +40,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adjust the alpha value (0.5 in this example) to control the transparency */
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
+  font-family: "Gill Sans MT";
   left: 0;
   right: 0;
-  z-index: 999; /* Optional: Use a z-index to control its stacking order */
+  z-index: 999;
+  color: white; /* Set default text color for all child elements */
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo-text {
-  color: white; /* Color for the logo text */
-  font-size: 20px; /* Adjust the font size as needed */
+  font-family: "Gill Sans MT";
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 .nav ul {
@@ -73,19 +74,23 @@
 
 .nav li {
   margin-right: 20px;
+  cursor: pointer;
+  color: white; /* Explicitly set the color for list items */
 }
 
 .nav li:last-child {
-  margin-right: 0; /* Remove margin for the last item */
+  margin-right: 0;
 }
 
 .nav a {
+  font-family: "Gill Sans MT";
   text-decoration: none;
-  color: white; /* Color for the navigation links */
-  font-family: "Helvetica";
+  color: white; /* Explicitly set the color for links */
   font-size: 16px;
 }
 
 .active-link {
   font-weight: bold;
+  font-size: 18px;
+  color: white; /* Ensure active link is also white */
 }
