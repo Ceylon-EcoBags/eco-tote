@@ -26,7 +26,7 @@ const AboutPage: React.FC = () => {
         <div className={styles.aboutSection}>
           <div className={styles.aboutImage}>
             <Image
-              src="/img/about/factory1.png"
+              src="/img/about/factory1.jpg"
               alt="Eco-Friendly Factory"
               width={400}
               height={350}

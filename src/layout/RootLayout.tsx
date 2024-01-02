@@ -9,7 +9,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="root-layout">
       <Head>
-        <title>Ceylon EcoBags</title>
+        <title>EcoCraft</title>
         <meta name="description" content="" />
         <link
           rel="preload"
