@@ -1,66 +1,59 @@
 import React from "react";
-import Image from "next/image";
 import { useRouter } from "next/router";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import Image from "next/image";
+import styles from "./navbar.module.css"; // Ensure this path is correct
 
-export default function Navbar() {
+export default function YourNavbar() {
   const router = useRouter();
 
-  const isLinkActive = (href: string) => {
-    return router.pathname === href ? "active-link" : "";
-  };
-
-  const handleNavigation = (path: string) => {
-    router.push(path);
-  };
-
   return (
-    <header className="navbar">
-      <div
-        className="logo-container"
-        onClick={() => handleNavigation("/")}
-        style={{ cursor: "pointer" }}
-      >
-        <Image src="/img/logo2.png" alt="Logo" width={125} height={125} />
-        <span
-          className="logo-text"
-          style={{ marginLeft: "0px", cursor: "pointer" }}
-        >
-          EcoCraft
-        </span>
-      </div>
-
-      <nav className="nav">
-        <ul style={{ listStyleType: "none", padding: 0 }}>
-          <li
-            className={isLinkActive("/")}
-            onClick={() => handleNavigation("/")}
-            style={{ cursor: "pointer" }}
-          >
-            Home
-          </li>
-          <li
-            className={isLinkActive("/about")}
-            onClick={() => handleNavigation("/about")}
-            style={{ cursor: "pointer" }}
-          >
-            About
-          </li>
-          <li
-            className={isLinkActive("/shop")}
-            onClick={() => handleNavigation("/shop")}
-            style={{ cursor: "pointer" }}
-          >
-            Bags
-          </li>
-          <li
-            className={isLinkActive("/contact")}
-            onClick={() => handleNavigation("/contact")}
-            style={{ cursor: "pointer" }}
-          >
-            Contact Us
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <Navbar
+      expand="lg"
+      variant="light"
+      className={styles.navbarContainer}
+      fixed="top"
+    >
+      <Container>
+        <Navbar.Brand href="/" className={styles.navbarBrand}>
+          <Image src="/img/logo2.svg" alt="Logo" width={125} height={125} />
+          <span className={styles.navbarLogoText}>EcoCraft</span>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link
+              href="/"
+              active={router.pathname === "/"}
+              className={styles.navLink}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              href="/about"
+              active={router.pathname === "/about"}
+              className={styles.navLink}
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
+              href="/shop"
+              active={router.pathname === "/shop"}
+              className={styles.navLink}
+            >
+              Products
+            </Nav.Link>
+            <Nav.Link
+              href="/contact"
+              active={router.pathname === "/contact"}
+              className={styles.navLink}
+            >
+              Contact Us
+            </Nav.Link>
+            {/* Add more Nav.Link items as needed */}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }

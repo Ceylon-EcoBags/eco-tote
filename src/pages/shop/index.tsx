@@ -42,13 +42,7 @@ const bagsData = [
 const shopPage: React.FC = () => {
   return (
     <div>
-      <header className="header">
-        <div className="logo-container">
-          <Image src="/img/logo.png" alt="Logo" width={125} height={125} />
-          <span className="logo-text">EcoCraft</span>
-        </div>
-        <Navbar />
-      </header>
+      <Navbar />
 
       <HeaderCard
         title="Bags For You"

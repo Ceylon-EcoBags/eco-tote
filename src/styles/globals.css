@@ -6,9 +6,32 @@
   z-index: 1;
   text-align: center;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
   font-size: 36px;
   font-family: "Tahoma";
+  overflow: hidden;
+
+  /* Animation and visual enhancements */
+  animation: fadeInUp 2s ease-in-out;
+  background: rgba(0, 0, 0, 0.1); /* Commented out */
+  padding: 20px;
+  /* border-radius: 15px; */
+}
+
+/* Keyframes for the fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+body {
+  background-attachment: fixed;
 }
 
 .logo-container {
@@ -34,63 +57,19 @@
 .footer-home a {
   margin-right: 30px;
 }
-
-.navbar {
-  padding-right: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  position: fixed;
-  top: 0;
-  font-family: "Gill Sans MT";
-  left: 0;
-  right: 0;
-  z-index: 999;
-  color: white; /* Set default text color for all child elements */
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
+.find-out-more-btn {
+  margin-top: 20px; /* Space above the button */
+  padding: 5px 10px; /* Padding inside the button */
+  font-size: 13px; /* Font size */
+  color: #fff; /* Text color */
+  background-color: #4caf50; /* Background color */
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-}
+  transition: background-color 0.3s ease;
 
-.logo-text {
-  font-family: "Gill Sans MT";
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav li {
-  margin-right: 20px;
-  cursor: pointer;
-  color: white; /* Explicitly set the color for list items */
-}
-
-.nav li:last-child {
-  margin-right: 0;
-}
-
-.nav a {
-  font-family: "Gill Sans MT";
-  text-decoration: none;
-  color: white; /* Explicitly set the color for links */
-  font-size: 16px;
-}
-
-.active-link {
-  font-weight: bold;
-  font-size: 18px;
-  color: white; /* Ensure active link is also white */
+  /* Optional: Add a hover effect */
+  &:hover {
+    background-color: #367c39;
+  }
 }

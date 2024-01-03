@@ -1,13 +1,11 @@
-/* VideoBackground.module.css */
-
 .video-background {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
   overflow: hidden;
   z-index: -1;
 }
@@ -19,6 +17,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  object-fit: cover; /* Cover the entire area, maintaining aspect ratio */
-  object-position: center; /* Center the video */
+  object-fit: cover;
+  object-position: center;
 }

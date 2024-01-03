@@ -21,7 +21,7 @@ export default function Footer() {
         >
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a href="mailto:youremail@gmail.com">
+        <a href="mailto:greenproductslk@gmail.com">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>

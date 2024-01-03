@@ -10,13 +10,8 @@ import Link from "next/link";
 const AboutPage: React.FC = () => {
   return (
     <div>
-      <header className="header">
-        <div className="logo-container">
-          <Image src="/img/logo.png" alt="Logo" width={125} height={125} />
-          <span className="logo-text">Eco Craft</span>
-        </div>
-        <Navbar />
-      </header>
+      <Navbar />
+
       <HeaderCard
         title="About Us"
         subtitle="Learn more about our journey and mission."
